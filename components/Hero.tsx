@@ -33,8 +33,8 @@ const socials = [
 
 // 👇 GANTI dengan link CV kamu
 const CV_LINKS = {
-  en: "https://drive.google.com/file/d/1dACnjCHSX6XEG3-7Wcyc1xxS1zIksqDm/view?usp=sharing",
-  id: "https://drive.google.com/file/d/1dACnjCHSX6XEG3-7Wcyc1xxS1zIksqDm/view?usp=sharing",
+  en: "https://drive.google.com/file/d/1FoH6-yLu1cPHxOEnQdMfnLHJMuoX65ny/view?usp=sharing",
+  id: "https://drive.google.com/file/d/1VVVV7tdFWljwjf_PBKntl7t3llDmi2Oq/view?usp=sharing",
 };
 
 export default function Hero() {
