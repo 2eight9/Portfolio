@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   title: "Apriliano Boimau",
   description:
     "Portfolio of Apriliano Ernando Benyamin Boimau — Frontend Developer & ML Enthusiast",
+  // Blok Verifikasi Google Search Console:
+  verification: {
+    google: "wLcLN7e2xqX8WWKNA9bhEkz2Bo86sHkRoGQYVoOxcYo",
+  },
 };
 
 export default function RootLayout({
