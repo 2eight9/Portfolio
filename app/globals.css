@@ -1,26 +1,128 @@
-@import "tailwindcss";
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss/preflight" layer(base);
+@import "tailwindcss/utilities" layer(utilities);
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg: #0a0a0a;
+  --color-surface: #111111;
+  --color-border: #1e1e1e;
+  --color-text: #ededed;
+  --color-muted: #555555;
+  --color-accent: #00ffd1;
+  --color-accent2: #7b61ff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Satoshi", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Clash Display", sans-serif;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  section {
+    padding: 5rem 1.5rem !important;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  .hamburger-btn {
+    display: flex !important;
+  }
+  section {
+    padding: 4rem 1rem !important;
+  }
+  .hero-section {
+    flex-direction: column-reverse !important;
+    padding-top: 8rem !important;
+    gap: 2rem !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .hero-section > div:first-child {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .hero-photo {
+    display: flex !important;
+  }
+  .hero-photo > div:first-child {
+    width: 200px !important;
+    height: 240px !important;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .project-buttons {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .mobile-menu-link {
+    font-size: 1.1rem !important;
+  }
+  .about-bio-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+  .hero-photo > div:first-child {
+    width: 160px !important;
+    height: 200px !important;
+  }
 }
