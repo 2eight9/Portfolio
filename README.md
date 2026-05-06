@@ -4,17 +4,17 @@ Website portfolio pribadi yang dibuat untuk menampilkan project, skill, dan info
 
 ## 🚀 Tech Stack
 
-* Next.js
-* React
-* Tailwind CSS
-* TypeScript
+- Next.js
+- React
+- Tailwind CSS
+- TypeScript
 
 ## ✨ Fitur
 
-* Tampilan responsive (mobile & desktop)
-* Animasi sederhana
-* Halaman portfolio project
-* Form kontak
+- Tampilan responsive (mobile & desktop)
+- Animasi sederhana
+- Halaman portfolio project
+- Form kontak
 
 ## 📦 Cara Menjalankan
 
@@ -34,7 +34,7 @@ RESEND_API_KEY=your_api_key
 
 ## 🌍 Live Demo
 
-(Akan ditambahkan setelah deploy)
+(https://apriliano.vercel.app/)
 
 ## 📧 Contact
 
