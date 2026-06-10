@@ -48,6 +48,8 @@ type Translations = {
     sending: string;
     successTitle: string;
     successMessage: string;
+    connect: string;
+    location: string;
   };
 };
 
@@ -59,21 +61,21 @@ const translations: Record<Lang, Translations> = {
       skills: "Skills",
       certificates: "Certificates",
       contact: "Contact",
-      hire: "Hire Me",
+      hire: "Let’s Talk",
     },
     hero: {
       greeting: "Hi, I am",
-      subtitle: "Frontend Developer & ML Enthusiast",
+      subtitle: "Fullstack AI Engineer",
       description:
-        "I build beautiful, interactive web experiences and explore the intersection of design and machine learning.",
+        "I build innovative end-to-end digital products by integrating modern web interfaces and artificial intelligence to create solutions that make a real difference.",
       viewWork: "View My Work",
-      getInTouch: "Get In Touch",
+      getInTouch: "Explore the Works",
     },
     about: {
       label: "01. About Me",
       title: "Who I Am",
-      bio1: "I am Apriliano Ernando Benyamin Boimau, a fresh graduate in Informatics at Universitas Amikom Yogyakarta with a passion for building beautiful and functional web experiences.",
-      bio2: "I love combining clean UI design with powerful frontend engineering, and I am deeply interested in Machine Learning — exploring how intelligent systems can be brought to life through the browser.",
+      bio1: "I am a Full-Stack AI Engineer and a recent graduate with a Bachelor’s degree in Computer Science from Amikom University in Yogyakarta. I am deeply committed to transforming complex artificial intelligence models into ready-to-use, adaptive digital products that have a real impact on users.",
+      bio2: "My core expertise lies in front-end engineering and machine learning integration, supported by a solid understanding of backend architecture that enables me to build end-to-end systems independently. My focus goes beyond simply writing code; I strive to create practical solutions to real-world problems—such as the digitization of cultural heritage through smart e-commerce platforms and technological innovation in the agricultural sector—using responsive, high-performance web interfaces.",
       techStack: "Tech Stack",
       certLabel: "02. Certificates",
       certTitle: "My Credentials",
@@ -81,23 +83,25 @@ const translations: Record<Lang, Translations> = {
     },
     projects: {
       label: "03. Projects",
-      title: "Things I've Built",
+      title: "Featured Projects",
       github: "GitHub",
       demo: "Live Demo",
     },
     contact: {
       label: "04. Contact",
-      title: "Get In Touch",
+      title: "Contact Me",
       description:
-        "Have a project in mind or just want to say hello? Feel free to reach out — I'd love to hear from you!",
+        "Have a question or a project in mind? Send me a message here!! I’ll get back to you right away!",
       name: "Your Name",
       email: "Your Email",
       message: "Message",
-      messagePlaceholder: "Tell me about your project...",
+      messagePlaceholder: "Write your message here...",
       send: "Send Message",
       sending: "Sending...",
       successTitle: "Message Sent!",
       successMessage: "Thank you! I'll get back to you as soon as possible.",
+      connect: "Connect with me",
+      location: "Location",
     },
   },
   id: {
@@ -107,21 +111,21 @@ const translations: Record<Lang, Translations> = {
       skills: "Keahlian",
       certificates: "Sertifikat",
       contact: "Kontak",
-      hire: "Rekrut Saya",
+      hire: "Mari Berdiskusi",
     },
     hero: {
       greeting: "Halo, saya",
-      subtitle: "Frontend Developer & ML Enthusiast",
+      subtitle: "Fullstack AI Engineer",
       description:
-        "Saya membangun pengalaman web yang indah dan interaktif serta mengeksplorasi persimpangan antara desain dan machine learning.",
+        "Saya membangun produk digital end-to-end yang inovatif dengan mengintegrasikan antarmuka web modern dan kecerdasan buatan untuk menciptakan solusi yang berdampak nyata.",
       viewWork: "Lihat Karya Saya",
       getInTouch: "Hubungi Saya",
     },
     about: {
       label: "01. Tentang Saya",
       title: "Siapa Saya",
-      bio1: "Saya Apriliano Ernando Benyamin Boimau, Lulusan Baru Informatika di Universitas Amikom Yogyakarta yang passionate dalam membangun pengalaman web yang indah dan fungsional.",
-      bio2: "Saya suka menggabungkan desain UI yang bersih dengan rekayasa frontend yang powerful, dan saya sangat tertarik dengan Machine Learning — mengeksplorasi bagaimana sistem cerdas dapat diwujudkan melalui browser.",
+      bio1: "Saya adalah seorang Fullstack AI Engineer dan lulusan baru Sarjana Komputer jurusan Informatika dari Universitas Amikom Yogyakarta. Saya memiliki dedikasi tinggi untuk mengubah model kecerdasan buatan yang kompleks menjadi produk digital yang siap pakai, adaptif, dan berdampak nyata bagi pengguna.",
+      bio2: "Keahlian utama saya terletak pada Frontend Engineering dan integrasi Machine Learning, yang didukung oleh pemahaman arsitektur backend yang solid untuk membangun sistem end-to-end secara mandiri. Fokus saya bukan sekadar menulis kode, melainkan menciptakan solusi praktis atas masalah nyata—seperti digitalisasi budaya melalui platform e-commerce pintar hingga inovasi teknologi di sektor agrikultur—lewat antarmuka web yang responsif dan berkinerja tinggi.",
       techStack: "Teknologi",
       certLabel: "02. Sertifikat",
       certTitle: "Kredensial Saya",
@@ -129,7 +133,7 @@ const translations: Record<Lang, Translations> = {
     },
     projects: {
       label: "03. Proyek",
-      title: "Yang Telah Saya Bangun",
+      title: "Proyek Pilihan",
       github: "GitHub",
       demo: "Demo Langsung",
     },
@@ -137,15 +141,17 @@ const translations: Record<Lang, Translations> = {
       label: "04. Kontak",
       title: "Hubungi Saya",
       description:
-        "Punya proyek atau sekadar ingin menyapa? Jangan ragu untuk menghubungi saya — saya senang mendengar dari kamu!",
+        "Punya pertanyaan atau rencana proyek? Kirim pesan di sini !! Saya akan segera merespons!!",
       name: "Nama Kamu",
       email: "Email Kamu",
       message: "Pesan",
-      messagePlaceholder: "Ceritakan tentang proyekmu...",
+      messagePlaceholder: "Tulis pesan Anda di sini...",
       send: "Kirim Pesan",
       sending: "Mengirim...",
       successTitle: "Pesan Terkirim!",
       successMessage: "Terima kasih! Saya akan membalas secepatnya.",
+      connect: "Hubungi saya",
+      location: "Lokasi",
     },
   },
 };

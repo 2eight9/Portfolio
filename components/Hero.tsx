@@ -182,7 +182,7 @@ export default function Hero() {
               e.currentTarget.style.color = "var(--color-accent)";
             }}
           >
-            ↓ {lang === "en" ? "Download CV" : "Unduh CV"}
+            ↓ {lang === "en" ? "View Resume" : "Lihat Resume"}
           </a>
         </motion.div>
       </div>

@@ -135,3 +135,14 @@ section {
 html {
   scroll-behavior: smooth;
 }
+
+/* Di layar yang lebih lebar dari 768px (Tablet/Laptop), buat layoutnya kembali berjajar ke samping */
+@media (min-width: 768px) {
+  .project-card-inner {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+  }
+  .projects-buttons {
+    align-self: flex-start !important;
+  }
+}

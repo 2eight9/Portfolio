@@ -97,7 +97,7 @@ const certificates = [
     },
     issuer: "Dicoding",
     date: "Mar 2026",
-    link: "https://drive.google.com/file/d/15htqQmRpGtS85oCR4XMVHa1UquinjreW/view?usp=drive_link",
+    link: "https://www.dicoding.com/certificates/JLX1VWD8NZ72",
   },
   {
     title: {
@@ -106,7 +106,7 @@ const certificates = [
     },
     issuer: "Dicoding",
     date: "Apr 2026",
-    link: "https://drive.google.com/file/d/13OZBRYdxY--5m_ZlVhnWP5aS55m7_90E/view?usp=drive_link",
+    link: "https://www.dicoding.com/certificates/4EXG1KJRDPRL",
   },
   {
     title: {
@@ -115,7 +115,7 @@ const certificates = [
     },
     issuer: "Dicoding",
     date: "Apr 2026",
-    link: "https://drive.google.com/file/d/121KfGp5B-JrS17koyey9fXq3shgez6o9/view?usp=drive_link",
+    link: "https://www.dicoding.com/certificates/ERZRLWDLQZYV",
   },
   {
     title: {
@@ -124,7 +124,7 @@ const certificates = [
     },
     issuer: "Dicoding",
     date: "Mar 2026",
-    link: "https://drive.google.com/file/d/1cPHsSfb3ekWCatYzA9XSD3AE39Mi65h1/view?usp=drive_link",
+    link: "https://www.dicoding.com/certificates/L4PQ98RL2PO1",
   },
   {
     title: {
@@ -133,7 +133,7 @@ const certificates = [
     },
     issuer: "Dicoding",
     date: "Mar 2026",
-    link: "https://drive.google.com/file/d/1Grcfkt_XlwJoHlaedgzUjc_1-BSGWyDR/view?usp=drive_link",
+    link: "https://www.dicoding.com/certificates/KEXLQ0OVWPG2",
   },
 ];
 
@@ -202,6 +202,7 @@ export default function About() {
               color: "var(--color-muted)",
               lineHeight: 1.8,
               marginBottom: "1.5rem",
+              textAlign: "justify",
             }}
           >
             {t.about.bio1}
@@ -211,6 +212,7 @@ export default function About() {
               fontSize: "1.125rem",
               color: "var(--color-muted)",
               lineHeight: 1.8,
+              textAlign: "justify",
             }}
           >
             {t.about.bio2}

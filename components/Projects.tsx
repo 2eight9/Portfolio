@@ -48,7 +48,7 @@ const projects = [
   },
   {
     number: "03",
-    title: "AgriCerdas",
+    title: "Agri Cerdas",
     category: {
       en: "Machine Learning & Web Development",
       id: "Pembelajaran Mesin & Pengembangan Web",
@@ -143,15 +143,16 @@ export default function Projects() {
             }
           >
             <div
+              className="project-card-inner"
               style={{
                 display: "flex",
+                flexDirection: "column",
                 justifyContent: "space-between",
-                alignItems: "start",
-                flexWrap: "wrap",
-                gap: "1rem",
+                alignItems: "stretch",
+                gap: "1.5rem",
               }}
             >
-              <div style={{ flex: 1 }}>
+              <div style={{ width: "100%" }}>
                 <div
                   style={{
                     display: "flex",
@@ -197,7 +198,8 @@ export default function Projects() {
                     color: "var(--color-muted)",
                     lineHeight: 1.7,
                     marginBottom: "1.25rem",
-                    maxWidth: "600px",
+                    maxWidth: "100%",
+                    textAlign: "justify",
                   }}
                 >
                   {project.description[lang]}
@@ -224,7 +226,13 @@ export default function Projects() {
               </div>
 
               <div
-                style={{ display: "flex", gap: "1rem", alignItems: "center" }}
+                className="projects-buttons"
+                style={{
+                  display: "flex",
+                  gap: "1rem",
+                  alignItems: "center",
+                  alignSelf: "flex-start",
+                }}
               >
                 <a
                   href={project.link}
@@ -260,6 +268,7 @@ export default function Projects() {
                     textDecoration: "none",
                     fontSize: "0.875rem",
                     fontWeight: 600,
+                    textAlign: "justify",
                   }}
                 >
                   {t.projects.demo}

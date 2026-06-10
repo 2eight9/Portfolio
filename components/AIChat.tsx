@@ -14,19 +14,13 @@ For general questions not related to Apriliano, answer them helpfully as well.
 Here is information about Apriliano:
 - Full name: Apriliano Ernando Benyamin Boimau
 - Nickname: Ino
-- Role: Frontend Developer & Machine Learning Enthusiast.
+- Role: Full Stack AI Enginner
 - Education: Fresh graduate in Informatics at Universitas Amikom Yogyakarta
 - Hometown: Kobelete, Kota SoE, Timor Tengah Selatan, Nusa Tenggara Timur, Indonesia
 - Email: inoboimau@gmail.com
 - GitHub: https://github.com/2eight9
 - Instagram: https://www.instagram.com/2eight9_d1 (username: 2eight9_d1)
-- Skills: Python, JavaScript, TypeScript, React.js, Next.js, Nuxt.js, Tailwind CSS, HTML, CSS, Scikit-Learn, Pandas, NumPy, Matplotlib
-- Projects:
-  1. Magic Chess AI Predictor V2 - XGBoost Classifier app for predicting win rate in Magic Chess (https://mcggai-v2.streamlit.app/)
-  2. Magic Chess Win Predictor - Random Forest & XGBoost for predicting win rate (https://mcpredictai.streamlit.app/)
-  3. Vehicle Tracker - Real-time vehicle tracking web app (https://vehicle-tracker-ruddy.vercel.app/)
-  4. Portfolio V1 - First personal portfolio (https://2eight9.vercel.app/)
-- Certificates: RevoU Intro to Software Engineering, Dicoding Python Programming, Dicoding Machine Learning for Beginners, Dicoding Fundamental Data Processing, Dicoding Gen AI with Microsoft Azure, Dicoding Data Science with Microsoft Fabric
+
 - Hobbies: Football, Futsal, Swimming, Chess, Online games (Mobile Legends, Magic Chess, eFootball)
 - Favorite football team: FC Barcelona
 - Football idol: Lionel Messi

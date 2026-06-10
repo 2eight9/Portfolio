@@ -16,11 +16,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: t.nav.about, href:"#about" },
-    { label: t.nav.projects, href:"#projects" },
-    { label: t.nav.skills, href:"#skills" },
-    { label: t.nav.certificates, href:"#certificates" },
-    { label: t.nav.contact, href:"#contact" },
+    { label: t.nav.about, href: "#about" },
+    { label: t.nav.projects, href: "#projects" },
+    { label: t.nav.skills, href: "#skills" },
+    { label: t.nav.certificates, href: "#certificates" },
+    { label: t.nav.contact, href: "#contact" },
   ];
 
   return (
@@ -47,8 +47,8 @@ export default function Navbar() {
         <Image
           src="/logo.png"
           alt="Apriliano Logo"
-          width={40}
-          height={40}
+          width={28}
+          height={29}
           priority
           style={{ objectFit: "contain" }}
         />
@@ -188,7 +188,8 @@ export default function Navbar() {
           right: 0,
           bottom: 0,
           zIndex: 40,
-          backgroundColor: "rgba(10,10,10,0.98)",
+          backgroundColor: "rgba(10,10,10)",
+          backdropFilter: "blur(20 px)",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -199,15 +200,6 @@ export default function Navbar() {
           pointerEvents: menuOpen ? "auto" : "none",
         }}
       >
-        {/* Logo Mobile */}
-        <Image
-          src="/logo.png"
-          alt="Logo"
-          width={50}
-          height={50}
-          style={{ objectFit: "contain", marginBottom: "0.5rem" }}
-        />
-
         {navLinks.map((link) => (
           <a
             key={link.label}
@@ -216,7 +208,7 @@ export default function Navbar() {
             className="mobile-menu-link"
             style={{
               fontFamily: "'Clash Display', sans-serif",
-              fontSize: "1.1rem",
+              fontSize: "clamp(1rem,4vw,1.25rem)",
               fontWeight: 600,
               color: "var(--color-text)",
               textDecoration: "none",
