@@ -14,7 +14,7 @@ For general questions not related to Apriliano, answer them helpfully as well.
 Here is information about Apriliano:
 - Full name: Apriliano Ernando Benyamin Boimau
 - Nickname: Ino
-- Role: Frontend Developer & Machine Learning Enthusiast
+- Role: Frontend Developer & Machine Learning Enthusiast.
 - Education: Fresh graduate in Informatics at Universitas Amikom Yogyakarta
 - Hometown: Kobelete, Kota SoE, Timor Tengah Selatan, Nusa Tenggara Timur, Indonesia
 - Email: inoboimau@gmail.com

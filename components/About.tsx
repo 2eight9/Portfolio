@@ -5,6 +5,7 @@ import { useInView } from "motion/react";
 import { useRef } from "react";
 import Image from "next/image";
 import { useLang } from "./LanguageContext";
+import { relative } from "path";
 
 const skills = {
   "Programming Language": [
@@ -20,15 +21,19 @@ const skills = {
       name: "TypeScript",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
     },
-  ],
-  "Web Development": [
     {
-      name: "React.js",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      name: "Golang",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
     },
+  ],
+  "Web & Backend Development": [
     {
       name: "Next.js",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    },
+    {
+      name: "React.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
     {
       name: "Nuxt.js",
@@ -39,15 +44,27 @@ const skills = {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     },
     {
-      name: "HTML",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      name: "Supabase",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
     },
     {
-      name: "CSS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      name: "PostgreSQL",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     },
   ],
-  "Machine Learning": [
+  "AI & Machine Learning": [
+    {
+      name: "Gemini API",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg",
+    },
+    {
+      name: "TensorFlow.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+    },
+    {
+      name: "Keras",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg",
+    },
     {
       name: "Scikit-Learn",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg",
@@ -59,10 +76,6 @@ const skills = {
     {
       name: "NumPy",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
-    },
-    {
-      name: "Matplotlib",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg",
     },
   ],
 };
@@ -247,8 +260,13 @@ export default function About() {
         </motion.div>
       </div>
 
-      {/* Skills - 1 baris marquee */}
-      <div id="skills" />
+      <div
+        id="skills"
+        style={{
+          position: "relative",
+          top: "-120px",
+        }}
+      />
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -267,6 +285,9 @@ export default function About() {
         >
           {t.about.techStack}
         </p>
+
+        {/* Skills - 1 baris marquee */}
+
         <div style={{ overflow: "hidden", position: "relative" }}>
           <div
             style={{
@@ -332,7 +353,8 @@ export default function About() {
       </motion.div>
 
       {/* Certificates */}
-      <div id="certificates" />
+      <div id="certificates" style={{ position: "relative", top: "-90px" }} />
+
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}

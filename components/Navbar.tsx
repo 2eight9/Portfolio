@@ -16,11 +16,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: t.nav.about, href: "#about" },
-    { label: t.nav.projects, href: "#projects" },
-    { label: t.nav.skills, href: "#skills" },
-    { label: t.nav.certificates, href: "#certificates" },
-    { label: t.nav.contact, href: "#contact" },
+    { label: t.nav.about, href:"#about" },
+    { label: t.nav.projects, href:"#projects" },
+    { label: t.nav.skills, href:"#skills" },
+    { label: t.nav.certificates, href:"#certificates" },
+    { label: t.nav.contact, href:"#contact" },
   ];
 
   return (

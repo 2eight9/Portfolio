@@ -128,7 +128,7 @@ const translations: Record<Lang, Translations> = {
       viewCert: "Lihat Sertifikat",
     },
     projects: {
-      label: "02. Proyek",
+      label: "03. Proyek",
       title: "Yang Telah Saya Bangun",
       github: "GitHub",
       demo: "Demo Langsung",

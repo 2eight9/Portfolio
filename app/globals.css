@@ -126,3 +126,12 @@ h4 {
     height: 200px !important;
   }
 }
+
+/* Tambahkan ini di globals.css Anda */
+section {
+  scroll-margin-top: 80px; /* Sesuaikan dengan tinggi navbar Anda */
+}
+
+html {
+  scroll-behavior: smooth;
+}

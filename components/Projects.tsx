@@ -8,56 +8,82 @@ import { useLang } from "./LanguageContext";
 const projects = [
   {
     number: "01",
-    title: "Magic Chess AI Predictor V2",
-    category: { en: "Machine Learning", id: "Machine Learning" },
-    description: {
-      en: "AI application to help Magic Chess players predict win probability based on Commander and Synergy combinations using XGBoost Classifier. Built with Cyberpunk theme and Glassmorphism.",
-      id: "Aplikasi AI untuk membantu pemain Magic Chess memprediksi peluang kemenangan berdasarkan kombinasi Commander dan Sinergi menggunakan XGBoost Classifier. Dibangun dengan tema Cyberpunk dan Glassmorphism.",
+    title: "TenunHub — AI-Powered Cultural Marketplace",
+    category: {
+      en: "Full-Stack Web Development / Gen-AI Integration",
+      id: "Pengembangan Web Full-Stack / Integrasi Kecerdasan Buatan Generatif",
     },
-    tech: ["Python", "XGBoost", "Streamlit", "Pandas", "Scikit-Learn"],
+    description: {
+      en: "An AI-powered e-commerce platform for Timorese woven fabric galleries. It features an automated cultural storytelling tool powered by the Gemini API and a data security system built with Supabase RLS.",
+      id: "Platform e-commerce berbasis AI untuk galeri kain tenun Timor. Dilengkapi fitur pembuat cerita budaya otomatis lewat Gemini API dan sistem keamanan data dengan Supabase RLS.",
+    },
+    tech: [
+      "Next.js",
+      "Golang",
+      "Supabase",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Gemini API",
+    ],
+    link: "https://github.com/2eight9/TenunHub.git",
+    demo: "https://tenun-hub.vercel.app/",
+  },
+  {
+    number: "02",
+    title: "Magic Chess Prediction Simulator V2",
+    category: { en: "Machine Learning", id: "Pembelajaran Mesin" },
+    description: {
+      en: "Machine Learning Based Winning Probability Prediction System for Magic Chess Go Go Season 4.",
+      id: "Sistem Prediksi Probabilitas Kemenangan Magic Chess Go Go Season 4 Berbasis Machine Learning.",
+    },
+    tech: [
+      "Python",
+      "Pandas",
+      "Numpy",
+      "Scikit-Learn(Random Forest & XGBoost)",
+      "Streamlit",
+    ],
     link: "https://github.com/2eight9/mcggs4_v2.git",
     demo: "https://mcggai-v2.streamlit.app/",
   },
   {
-    number: "02",
-    title: "Magic Chess Win Predictor",
-    category: { en: "Machine Learning", id: "Machine Learning" },
-    description: {
-      en: "Application to predict Win Rate in Magic Chess based on Commander, Role, and Faction combinations using Random Forest and XGBoost trained on historical match data.",
-      id: "Aplikasi prediksi Win Rate dalam game Magic Chess berdasarkan kombinasi Commander, Role, dan Faction menggunakan Random Forest dan XGBoost yang dilatih dengan data historis pertandingan.",
-    },
-    tech: ["Python", "Random Forest", "XGBoost", "Streamlit", "Pandas"],
-    link: "https://github.com/2eight9/mcggs4_p1.git",
-    demo: "https://mcpredictai.streamlit.app/",
-  },
-  {
     number: "03",
-    title: "Vehicle Tracker",
-    category: { en: "Web Development", id: "Pengembangan Web" },
-    description: {
-      en: "Web application for real-time vehicle tracking. Built with modern web technologies and deployed using Vercel.",
-      id: "Aplikasi web untuk melacak kendaraan secara real-time. Dibangun dengan teknologi web modern dan di-deploy menggunakan Vercel.",
+    title: "AgriCerdas",
+    category: {
+      en: "Machine Learning & Web Development",
+      id: "Pembelajaran Mesin & Pengembangan Web",
     },
-    tech: ["Next.js", "React.js", "Tailwind CSS", "Vercel"],
-    link: "https://github.com/2eight9/vehicle-tracker.git",
-    demo: "https://vehicle-tracker-ruddy.vercel.app/",
+    description: {
+      en: "An AI-powered web application for diagnosing corn leaf diseases in real time and offline directly from a browser. It utilizes an optimized MobileNetV2 architecture to ensure that the classification process runs smoothly and quickly on mobile devices without overloading the backend server.",
+      id: "Aplikasi web berbasis AI untuk mendiagnosis penyakit daun jagung secara real-time dan offline langsung dari browser. Memanfaatkan arsitektur MobileNetV2 yang dioptimasi agar proses klasifikasi berjalan ringan dan cepat di perangkat mobile tanpa membebani server backend.",
+    },
+    tech: [
+      "Next.js",
+      "TensorFlow.js",
+      "MobileNet V2",
+      "Tailwind CSS",
+      "Keras",
+      "Python",
+    ],
+    link: "https://github.com/2eight9/agricerdas.git",
+    demo: "https://agricerdas-bice.vercel.app/",
   },
   {
     number: "04",
-    title: "Portfolio V1",
-    category: { en: "Web Development", id: "Pengembangan Web" },
+    title: "Vehicle Tracker Dashboard",
+    category: { en: "Frontend Development", id: "Pengembangan Front-End" },
     description: {
-      en: "First version of personal portfolio website showcasing projects and skills as a Frontend Developer and ML Enthusiast.",
-      id: "Versi pertama portfolio website pribadi yang menampilkan project dan keahlian sebagai Frontend Developer dan ML Enthusiast.",
+      id: "Panel kendali berbasis web yang responsif untuk memantau aktivitas armada kendaraan logistik secara langsung. Dikembangkan menggunakan React, TypeScript, dan Vite dengan tampilan dinamis berbasis Tailwind CSS.",
+      en: "A responsive web-based control panel for real-time monitoring of logistics vehicle fleet activity. Developed using React, TypeScript, and Vite with a dynamic interface built on Tailwind CSS.",
     },
-    tech: ["Next.js", "React.js", "Tailwind CSS", "Vercel"],
-    link: "https://github.com/2eight9/Portfolio1s6.git",
-    demo: "https://2eight9.vercel.app/",
+    tech: ["Typescript", "React.js", "Vite", "Tailwind CSS"],
+    link: "https://github.com/2eight9/vehicle-tracker.git",
+    demo: "https://vehicle-tracker-ruddy.vercel.app/",
   },
 ];
 
 export default function Projects() {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
   const { lang, t } = useLang();
 

@@ -31,7 +31,7 @@ const socials = [
   },
 ];
 
-// 👇 GANTI dengan link CV kamu
+// link CV
 const CV_LINKS = {
   en: "https://drive.google.com/file/d/1FoH6-yLu1cPHxOEnQdMfnLHJMuoX65ny/view?usp=sharing",
   id: "https://drive.google.com/file/d/1VVVV7tdFWljwjf_PBKntl7t3llDmi2Oq/view?usp=sharing",
