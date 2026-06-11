@@ -33,8 +33,8 @@ const socials = [
 
 // link CV
 const CV_LINKS = {
-  en: "https://drive.google.com/file/d/1FoH6-yLu1cPHxOEnQdMfnLHJMuoX65ny/view?usp=sharing",
-  id: "https://drive.google.com/file/d/1VVVV7tdFWljwjf_PBKntl7t3llDmi2Oq/view?usp=sharing",
+  en: "https://drive.google.com/file/d/1N_V9RKN9l3BBNhM2jMxzm2aD1BKqtVlx/view?usp=sharing",
+  id: "https://drive.google.com/file/d/17XZEU3Iq-tyrZGqQUJplWGXxKWSJqNko/view?usp=sharing",
 };
 
 export default function Hero() {
